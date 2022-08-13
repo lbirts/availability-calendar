@@ -1,22 +1,22 @@
-import { saturday, sunday, getFormattedRange, getDaysOfWeek, getPrevWeek, getNextWeek, getHours } from './helpers';
+import { saturday, sunday, getFormattedRange, getDaysOfWeek, getPrevWeek, getNextWeek, getHours } from './helpers'
 
 it('sunday returns first day of week in the first hour', () => {
     const date = 'August 12, 2020'
     const expected = new Date('August 9, 2020')
     expect(sunday(date)).toEqual(expected)
-});
+})
 
 it('saturday returns last day of week in the last hour', () => {
     const date = 'August 12, 2020'
     const expected = new Date('August 15, 2020 23:59:59:999')
     expect(saturday(date)).toEqual(expected)
-});
+})
 
 it('getFormattedRange returns formatted string', () => {
     const date = 'August 12, 2020'
     const expected = '9 - 15 August 2020'
     expect(getFormattedRange(date)).toEqual(expected)
-});
+})
 
 it('getDaysOfWeek returns array of weekdays', () => {
     const date = 'August 12, 2020'
@@ -30,19 +30,19 @@ it('getDaysOfWeek returns array of weekdays', () => {
         new Date('August 15, 2020')
     ]
     expect(getDaysOfWeek(date)).toEqual(expected)
-});
+})
 
 it('getPrevWeek returns date from prev week', () => {
     const date = 'August 12, 2020'
     const expected = new Date('August 5, 2020')
     expect(getPrevWeek(date)).toEqual(expected)
-});
+})
 
 it('getNextWeek returns date from next week', () => {
     const date = 'August 12, 2020'
     const expected = new Date('August 19, 2020')
     expect(getNextWeek(date)).toEqual(expected)
-});
+})
 
 it('getHours returns array of hours in day', () => {
     const date = 'August 12, 2020'
@@ -73,4 +73,4 @@ it('getHours returns array of hours in day', () => {
         new Date('August 12, 2020 23:00:00'),
     ]
     expect(getHours(date)).toEqual(expected)
-});
+})

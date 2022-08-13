@@ -1,5 +1,5 @@
-import React from 'react';
-import { getDate, format } from 'date-fns';
+import React from 'react'
+import { getDate, format } from 'date-fns'
 
 export default function TableHeader({
     dateRange

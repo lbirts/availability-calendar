@@ -1,9 +1,9 @@
-import React from 'react';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import React from 'react'
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
+import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 
-import { getFormattedRange, getNextWeek, getPrevWeek } from './helpers';
+import { getFormattedRange, getNextWeek, getPrevWeek } from './helpers'
 
 export default function Header({
     focusDate,

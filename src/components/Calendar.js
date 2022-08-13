@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Header from './Header';
-import Table from './Table/Table';
-import { getDaysOfWeek } from './helpers';
+import React, { useState, useEffect } from 'react'
+import Header from './Header'
+import Table from './Table/Table'
+import { getDaysOfWeek } from './helpers'
 
 export default function Calendar() {
     
