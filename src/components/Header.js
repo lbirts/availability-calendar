@@ -44,7 +44,7 @@ export default function Header({
                     />
                 </LocalizationProvider>
             </div>
-            <button className='print' onClick={() => console.log(availabilityPeriods)}>Print</button>
+            <button data-test-id='print-btn' className='print' onClick={() => console.log(availabilityPeriods)}>Print</button>
         </div> 
     )
 }
