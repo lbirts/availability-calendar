@@ -2,7 +2,6 @@ import Calendar from './components/Calendar';
 import './App.css';
 
 function App() {
-  const handleStickyScroll = (e) => {console.log(e)}
   return (
     <div className="App">
       <header>
@@ -13,7 +12,7 @@ function App() {
           </span>
         </div>
       </header>
-      <main onScroll={handleStickyScroll}>
+      <main>
         <Calendar />
       </main>
     </div>
