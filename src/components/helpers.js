@@ -19,7 +19,7 @@ export const getFormattedRange = (d) => {
 
 export const getDaysOfWeek = (d) => eachDayOfInterval({ start: sunday(d), end: saturday(d)})
 
-export const getPrevWeek = (d) => subWeeks(d, 1)
-export const getNextWeek = (d) => addWeeks(d, 1)
+export const getPrevWeek = (d) => subWeeks(new Date(d), 1)
+export const getNextWeek = (d) => addWeeks(new Date(d), 1)
 
-export const getHours = (d) => eachHourOfInterval({start: startOfDay(d), end: endOfDay(d)})
+export const getHours = (d) => eachHourOfInterval({start: startOfDay(new Date(d)), end: endOfDay(new Date(d))})
