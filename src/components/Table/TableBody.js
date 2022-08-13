@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { getHours } from '../helpers';
-import { format } from 'date-fns';
-import Cells from './Cells';
+import React, { useState } from 'react'
+import { getHours } from '../helpers'
+import { format } from 'date-fns'
+import Cell from './Cell'
 
 export default function TableBody({
     focusDate,
@@ -12,7 +12,7 @@ export default function TableBody({
     const [dragSelection, setDragSelection] = useState({})
 
     const renderCells = (hour) => dateRange.map((date, index) => (
-        <Cells
+        <Cell
             key={index}
             availabilityPeriods={availabilityPeriods}
             hour={parseInt(format(hour, 'H'))}

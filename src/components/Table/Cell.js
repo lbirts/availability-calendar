@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-export default function Cells({
+export default function Cell({
     hour,
     day,
     availabilityPeriods,
@@ -73,7 +73,8 @@ export default function Cells({
     }
 
     return (
-        <td 
+        <td
+            data-test-id={`${day}-${hour}-cell`}
             className={`${isSelected && 'selected'}`}
             key={day}
             onMouseDown={onMouseEvents}
