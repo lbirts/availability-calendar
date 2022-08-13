@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Calendar from './components/Calendar';
 import './App.css';
 
 function App() {
+  const handleStickyScroll = (e) => {console.log(e)}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div id="logo">
+          <span className="icon">date_range</span>
+          <span>
+            react<b>calendar</b>
+          </span>
+        </div>
       </header>
+      <main onScroll={handleStickyScroll}>
+        <Calendar />
+      </main>
     </div>
   );
 }
