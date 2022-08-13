@@ -70,7 +70,7 @@ it('getHours returns array of hours in day', () => {
         new Date('August 12, 2020 20:00:00'),
         new Date('August 12, 2020 21:00:00'),
         new Date('August 12, 2020 22:00:00'),
-        new Date('August 12, 2020 23:00:00'),
+        new Date('August 12, 2020 23:00:00')
     ]
     expect(getHours(date)).toEqual(expected)
 })
