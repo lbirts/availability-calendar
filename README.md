@@ -7,3 +7,5 @@ To start it in your environment, clone the repo and while in folder, execute fol
 npm install
 npm run start
 ```
+
+You can click and linear drag in the squares to update the availability
