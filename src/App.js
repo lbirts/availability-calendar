@@ -7,7 +7,7 @@ function App() {
       <header>
         <div id="logo">
           <span className="icon">date_range</span>
-          <span>
+          <span data-test-id="reactCalendar">
             react<b>calendar</b>
           </span>
         </div>
