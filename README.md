@@ -12,4 +12,4 @@ You can click and linear drag in the cells to update the availability
 
 Use `npm run cypress` to run cypress tests, be sure the server has already started
 
-se `npm test` to run unit tests
+Use `npm test` to run unit tests
